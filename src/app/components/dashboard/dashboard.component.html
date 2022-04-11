@@ -1,0 +1,9 @@
+<div class="bootstrap-wrapper">
+    <div class="container mt text-center">
+      
+        <h1>Welcome to Private Dashboard Panel !</h1>
+        <h2 *ngIf="user">User is {{user.name}}</h2>
+        <button (click)="getUser()" mat-raised-button>Get Details</button>
+
+    </div>    
+</div>

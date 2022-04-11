@@ -1,0 +1,7 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <h1>Welcome to Home Page !</h1>
+        <a *ngIf="!LoggedInFlag" routerLink="/login" mat-raised-button color="accent">Login Here !</a>
+        <a *ngIf="LoggedInFlag" (click)="logoutUser()" mat-raised-button color="accent">Logout</a>   
+    </div>
+</div>
